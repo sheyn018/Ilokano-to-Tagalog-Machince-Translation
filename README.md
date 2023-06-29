@@ -1,4 +1,5 @@
-# Ilokano-Tagalog Translator
+| <img src="website/static/img/Icon.png" width="50px"> | <h1 style="font-size: 24px">Ilokano-Tagalog Translator</h1> |
+| --- | --- |
 
 The Ilokano-Tagalog Translator is a web application machine translation tool that translates Ilokano to Tagalog and vice versa using a combination of example-based, rule-based, and statistical machine translation models.
 
