@@ -1,0 +1,11 @@
+pandas
+numpy
+nltk
+sacrebleu
+matplotlib
+seaborn
+functools
+statistics
+scipy
+flask
+flask_sqlalchemy

@@ -1,60 +1,79 @@
-# ILOKANO-TAGALOG TRANSLATOR USING EXAMPLE-BASED, RULE-BASED AND STATISTICAL MODEL MACHINE TRANSLATION
-Repository for Ilokano-Tagalog Translator
+# Ilokano-Tagalog Translator
 
-A machine translation tool that translates text from Ilokano to Tagalog and vice versa, using a combination of example-based, rule-based, and statistical machine translation models.
+The Ilokano-Tagalog Translator is a web application machine translation tool that translates Ilokano to Tagalog and vice versa using a combination of example-based, rule-based, and statistical machine translation models.
 
-## Table of Contents
-
+## 🗒️ Table of Contents
 - [Background](#background)
-- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Tools and Languages](#tools-and-languages)
 - [Usage](#usage)
-- [Models](#models)
-- [Evaluation](#evaluation)
-- [Contribution](#contribution)
-- [References](#references)
 
-## Background
+## 📖 Background
 
-This project aims to provide a machine translation tool for Ilokano and Tagalog languages, which are widely spoken in the Philippines. The tool uses a combination of example-based, rule-based, and statistical machine translation models to provide accurate and fluent translations.
+The Ilokano and Tagalog language are two of the most spoken languages in the Philippines. However, based on reasearch, there are very limited studies related to these languages in the field of computing, specifically, in Natural Language Processing. 
 
-## Installation
+This project aims to lay a foundation for the future studies regarding local languages in the Philippines, wherein most of the languages are low-resource.
 
-To install the dependencies, run the following command:
+The translator utilizes a hybrid approach in converting langauges. The example-based, rule-based, and statistical machine translation models are used in translating Ilokano and Tagalog text.
 
-pip install -r requirements.txt
+## 📁 Project Structure
+    ILOKANO-TAGALOG TRANSLATOR
+      
+      ├── data/                    <- Data used and collected for this project
+      │   ├── csv data/
+      │   ├── excel data/
+      │   ├── json data/
+      │   ├── scores/
+      │   └── text data/
+      ├── module/                  <- Backend implementation for the web application
+      │   ├── il_tl/
+      │   ├── scoring/
+      │   ├── smt/
+      │   └── tl_il/
+      ├── notebooks/               <- Data used and collected for this project
+      │   ├── evaluation/
+      │   ├── functions/
+      │   ├── Ilokano to Tagalog/
+      │   └── Tagalog to Ilokano/
+      ├── website/                 <- Front end implementation for the web application
+      ├── .gitignore               <- Avoids uploading data, credentials, outputs, system files etc
+      ├── LICENSE                  <- License for this project
+      ├── main.py                  <- Launches the application
+      ├── README.md                <- The top-level README for developers/collaborators using this project.
+      └── requirements.txt         <- The requirements file for reproducing the analysis environment
 
-## Usage Instruction
---------------
-1. Check [Dependencies](#dependencies) for the required tools needed, install it then set up.
-2. Import the necessary modules.
-3. Run the python notebook on Jupyter Notebook. 
-4. Enter "http://127.0.0.1:5000" at your browsers URL
+## 🤖 Tools and Languages
 
-### Dependencies 
-1. **[Python](#python)** <br>
-2. **[Python Modules](#pythonModule)** <br>
-2.1 **[NLTK](#nltk)** <br>
-2.2 **[Pandas](#pandas)** <br>
-2.3 **[Jupyter Notebook](#jupyterNotebook)** <br>
-3. **[Code editors](#codeEditors)** <br>
-3.1. **[Visual Code](#visual-code)** <br>
+<div style = "display: inline-block">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></img>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"></img>
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"></img>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></img>
+  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></img>
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"></img>
+</div>
 
+## 📓 Usage
 
-## Models
+Clone the project
 
-The project uses a combination of example-based, rule-based, and statistical machine translation models. The models are trained on a dataset of Ilokano-Tagalog parallel sentences.
+```bash
+  git clone https://github.com/sheyn018/Ilokano-to-Tagalog-Machince-Translation.git
+```
 
-## Evaluation
+Go to the project directory
 
-The translation tool has been evaluated on a test set of Ilokano-Tagalog sentences, achieving an BLEU score of x% for Ilokano to Tagalog and y% for Tagalog to Ilokano.
+```bash
+  cd my-project
+```
 
-## Contribution
+Install dependencies
 
-We welcome contributions to this project. Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
+```bash
+  pip install -r requirements.txt
+```
 
-## References
+Once all requirements are installed, follow these steps to run the app:
 
-- [Ilokano-Tagalog Parallel Corpus](https://github.com/ilokano-tagalog-corpus)
-- [Example-based Machine Translation](https://www.aclweb.org/anthology/C92-2078/)
-- [Rule-based Machine Translation](https://www.sciencedirect.com/topics/computer-science/rule-based-machine-translation)
-- [Statistical Machine Translation](https://www.sciencedirect.com/topics/computer-science/statistical-machine-translation)
+1. Run '**main.py**'.
+2. Click on the development server in the terminal to access the web app.
